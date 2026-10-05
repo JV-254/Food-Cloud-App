@@ -1,0 +1,47 @@
+/* Client/src/index.css */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+@import "tailwindcss";
+body {
+  font-family: 'Inter', sans-serif;
+}
+
+/* Custom Scrollbar Architecture */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(156, 163, 175, 0.5);
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(107, 114, 128, 0.7);
+}
+
+/* Custom Dark Mode Enhancements overrides */
+.dark-mode {
+  background-color: #0f172a !important;
+  color: #f8fafc !important;
+}
+.dark-mode .bg-white {
+  background-color: #1e293b !important;
+  color: #f8fafc !important;
+}
+.dark-mode .text-slate-900, .dark-mode .text-slate-800 { color: #f8fafc !important; }
+.dark-mode .text-slate-500, .dark-mode .text-slate-400 { color: #cbd5e1 !important; }
+.dark-mode .border-slate-100, .dark-mode .border-slate-200 { border-color: #334155 !important; }
+.dark-mode .bg-slate-50 { background-color: #1e293b/40 !important; }
+
+.dark-mode input, .dark-mode select {
+  background-color: #334155 !important;
+  color: #f8fafc !important;
+  border-color: #475569 !important;
+}
+
+/* Transitions */
+.sidebar-transition {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}

@@ -1,0 +1,1 @@
+UPDATE users SET is_verified = 1 WHERE email = 'njaugeorge42@gmail.com';
